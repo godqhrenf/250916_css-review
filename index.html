@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>안녕하세요 [행둘이]입니다</title>
+
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+
+    <!-- og tag -->
+    <meta property="og:title" content="백엔드 개발자 [행둘이]를 소개합니다!" />
+    <meta
+      property="og:description"
+      content="코드와 함께 성장하는 백엔드 개발자, 행둘이입니다. 저의 프로젝트와 기술 스택을 소개합니다."
+    />
+    <meta
+      property="og:image"
+      content="https://godqhrenf.github.io/250916_css-review/img/preview.png"
+    />
+
+    <style>
+      @font-face {
+        font-family: "RoundedFixedsys";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+          format("woff");
+        font-weight: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "GMarketSans";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+          format("woff");
+        font-weight: 300;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "GMarketSans";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+          format("woff");
+        font-weight: 500;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "GMarketSans";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+          format("woff");
+        font-weight: 700;
+        font-display: swap;
+      }
+
+      body {
+        font-family: "GMarketSans";
+      }
+
+      .title {
+        font-family: "RoundedFixedsys";
+        color: #fa147f;
+        /* color: #f9ee8d; */
+        line-height: 1.2;
+      }
+
+      * {
+        /* 모든 box width, height를 우리 지정에 맞게 */
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #140532;
+        color: white;
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+      }
+
+      /* 색상 설정 */
+      .box {
+        background-color: #fa147f;
+        padding: 24px;
+        border-radius: 12px;
+      }
+
+      body > section {
+        padding: 0 24px;
+        max-width: 576px;
+        margin: auto;
+        width: 100%;
+      }
+
+      h2 {
+        color: #09e4fa;
+      }
+
+      #intro .title {
+        text-align: center;
+      }
+
+      #intro div {
+        line-height: 1.6;
+      }
+
+      #tech-stack ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      #tech-stack li {
+        list-style: none;
+        width: 128px;
+        aspect-ratio: 1;
+        background-color: #f9ee8d;
+        border-radius: 8px;
+        border: 1px transparent solid;
+        padding: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #tech-stack img {
+        width: 80%;
+        padding: 8px;
+        background-color: white;
+        border-radius: 50%;
+      }
+
+      #portfolio .box > div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+      }
+
+      #portfolio .item {
+        background-color: #f9ee8d;
+        width: 100%;
+        height: 160px;
+        border-radius: 8px;
+        border: 2px white solid;
+        padding: 0 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="intro">
+      <h1 class="title">
+        반갑습니다! <br />
+        성장하는 백엔드 개발자<br />
+        [행둘이]입니다
+      </h1>
+      <section class="box">
+        <div>
+          안녕하세요! <strong>코드와 함께 성장하는</strong> 백엔드 개발자
+          행둘이입니다. 복잡한 문제를 논리적으로 해결하고, 견고한 서버
+          아키텍처를 설계하는 과정에서 즐거움을 느낍니다. 함께 배우고 성장하는
+          것을 즐깁니다.
+        </div>
+      </section>
+    </section>
+
+    <!-- 기술 스택 -->
+    <section id="tech-stack">
+      <section class="box">
+        <h2>🕹️기술 스택</h2>
+        <ul>
+          <li><img src="img/java.png" alt="JAVA" /></li>
+          <li><img src="img/spring.png" alt="SPRING" /></li>
+          <li><img src="img/java.png" alt="MYSQL" /></li>
+          <li><img src="img/aws.png" alt="AWS" /></li>
+          <li><img src="img/github.png" alt="GITHUB" /></li>
+        </ul>
+      </section>
+    </section>
+
+    <!-- 포트폴리오 -->
+    <section id="portfolio">
+      <section class="box">
+        <h2>🗂️포트폴리오</h2>
+        <div>
+          <div class="item">
+            <h3>여행 추천 프로젝트</h3>
+            <p>
+              사용자 취향과 여행 기록을 분석하여 맞춤형 여행지를 추천하는
+              서비스입니다. Spring Boot 기반으로 추천 알고리즘을 구현했습니다.
+            </p>
+          </div>
+          <div class="item">
+            <h3>재능 매칭 프로젝트</h3>
+            <p>
+              다양한 분야의 전문가와 사용자를 연결하는 재능 공유 플랫폼입니다.
+              실시간 채팅과 안전한 결제 시스템을 구축하여 사용자 경험을
+              높였습니다.
+            </p>
+          </div>
+          <div class="item">
+            <h3>AWS 인프라 프로젝트</h3>
+            <p>
+              안정적이고 확장 가능한 서비스 운영을 위해 AWS 인프라를 설계하고
+              구축했습니다. Jenkins를 이용한 CI/CD 파이프라인을 구성했습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
